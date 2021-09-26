@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body class="disable-select">
+    <main id="box">
+        <h1>Make a tip</h1>
+        <section>
+            <div class="bill">
+                <label>Bill</label>
+                <input class="number" type="number" id="billInput">
+            </div>
+
+            <div>
+                <div class="spaceB">
+                    <label>Select Tip</label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" id="tipInput" value="0">
+            </div>
+
+            <div class="spaceB">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="spaceB">
+                <span>Total</span>
+                <span id="totalBill"></span>
+            </div>
+
+        </section>
+
+        <section>
+            <div>
+                <div class="spaceB">
+                    <label>Split</label>
+                    <span id="splitValue"></span>
+                </div>
+                <input type="range" name="" id="splitInput" value="1" min="1" max="10">
+            </div>
+
+            <div class="spaceB">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+            <hr>
+            <div class="spaceB">
+                <span>Tip each</span>
+                <span id="tipEach"></span>
+            </div>
+
+        </section>
+    </main>
+    <footer>100 day challenge &copy; Miki 2021</footer>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
